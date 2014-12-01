@@ -10,10 +10,6 @@
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="skin//apollo/plugins/alertify/alertify.core.css" />
-    <link rel="stylesheet" href="skin//apollo/plugins/alertify/alertify.bootstrap.css" />
-    <link rel="stylesheet" href="skin//apollo/plugins/iosOverlay/iosOverlay.css" />
-
     <!-- CSS Link -->
     <link rel="stylesheet" href="css/main.css">
 
@@ -32,6 +28,13 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script>
+        $('img').lazyload({
+            threshold : 0,
+            placeholder : 'skin/apollo/plugins/iosOverlay/img/check.png',
+            event : 'click',
+            effect : 'fadeIn'
+        });
+
         $(document).ready(function(){
 
             $.getJSON( "data/pf.json", function( data ) {
@@ -41,12 +44,6 @@
                     var html = Mustache.to_html(template, myData);
                     $('.pf-list').html(html);
 
-                    $('img').lazyload({
-                        threshold : 0,
-                        placeholder : 'skin/apollo/plugins/iosOverlay/img/check.png',
-                        event : 'click',
-                        effect : 'fadeIn'
-                    });
                 });
             })
             .done(function() {
