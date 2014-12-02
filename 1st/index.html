@@ -23,18 +23,10 @@
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/mustache.js/mustache.js"></script>
-    <script src="js/jquery.lazyload.min.js"></script>
 
     <script src="js/bootstrap.min.js"></script>
 
     <script>
-        $('img').lazyload({
-            threshold : 0,
-            placeholder : 'skin/apollo/plugins/iosOverlay/img/check.png',
-            event : 'click',
-            effect : 'fadeIn'
-        });
-
         $(document).ready(function(){
 
             $.getJSON( "data/pf.json", function( data ) {

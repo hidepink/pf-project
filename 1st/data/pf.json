@@ -1,8 +1,9 @@
 {
 	"projects": [
 		{
+			"id":"lotteria",
 			"title": "롯데리아 웹사이트 리뉴얼",
-			"skills": "HTML/CSS/Javascript",
+			"type":"Javascript",
 			"skills": [
 				{
 					"skill": "HTML",
@@ -21,7 +22,11 @@
 				}
 			],
 			"url": "<a href='http://www.lotteria.com/' target='_blank'>http://www.lotteria.com/</a>",
-			"imgURL": "img/pf/pf001-01.jpeg",
+			"img": [
+				{"imgURL":"img/pf/pf001-01.jpeg","index":0,"first":"active"},
+				{"imgURL":"img/pf/pf001-02.jpeg","index":1},
+				{"imgURL":"img/pf/pf001-03.jpeg","index":2}
+			],
 			"contents": {
 				"cTitle": "Auto Animation Slide Banner",
 				"cDetail": "롯데리아 웹사이트 전체 리뉴얼 프로젝트에 인터랙티브 개발자로 참여했습니다. 이번 프로젝트에서 인터랙티브 요소는 메인 페이지의 집중되었는데요. 그 중 가장 컸던 이슈는 페이지에서 대부분의 영역을 차지하고 있는 메인 배너 콘텐츠입니다. 이 콘텐츠는 겉으로 보기에는 단순한 이미지 슬라이더로 보이지만 모든 슬라이드 내부 요소들에 애니메이션이 적용되어 있으며 이 애니메이션들은 자바스크립트로 제어됩니다. 특이점은 슬라이드의 애니메이션을 일일히 하드코딩 하지 않고 자동으로 위치를 파악해서 어떤 슬라이드가 와도 애니메이션을 넣을 수 있다는 점입니다. 로직을 간단히 설명하면 각각 요소들의 최종위치는 CSS로 설정되어 있고 이 최종위치값을 자바스크립트에서 페이지가 최초 로딩될때 저장해 놓습니다. 그리고 슬라이드가 실행될때마다 요소들의 위치를 화면밖으로 안보이도록 설정한후 곧바로 자바스크립트에서 기억했던 최종위치로 애니메이션 시킵니다. 이렇게 작업한 이유는 슬라이드가 추가되거나 수정사항이 발생시 유지보수가 쉽도록 하기 위해서였는데 함께 작업했던 웹퍼블리셔들이 따로 스크립트에 신경 쓸 필요가 없어 반응이 좋았습니다."
@@ -29,7 +34,9 @@
 		},
 
 		{
+			"id":"cdnetworks",
 			"title": "씨디네트웍스 웹사이트 리뉴얼",
+			"type":"Javascript",
 			"skills": [
 				{
 					"skill": "HTML",
@@ -48,7 +55,9 @@
 				}
 			],
 			"url": "<a href='http://www.cdnetworks.co.kr' target='_blank'>http://www.cdnetworks.co.kr</a>",
-			"imgURL": "img/pf/pf003-01.jpeg",
+			"img": [
+				{"imgURL":"img/pf/pf002-01.jpeg","index":0,"first":"active"}
+			],
 			"contents": [
 				{
 					"cTitle": "Full Interactive Layout",
@@ -62,7 +71,9 @@
 		},
 
 		{
+			"id":"clara",
 			"title": "연예인 클라라 블로그 구축",
+			"type":"Wordpress",
 			"skills": [
 				{
 					"skill": "Wordpress",
@@ -71,7 +82,11 @@
 				}
 			],
 			"url": "서비스 종료(리뉴얼됨)",
-			"imgURL": "img/pf/pf002-01.jpeg",
+			"img": [
+				{"imgURL":"img/pf/pf003-01.jpeg","index":0,"first":"active"},
+				{"imgURL":"img/pf/pf003-02.jpeg","index":1},
+				{"imgURL":"img/pf/pf003-03.jpeg","index":2}
+			],
 			"contents": [
 				{
 					"cTitle": "Wordpress Website",
@@ -81,7 +96,9 @@
 		},
 
 		{
+			"id":"lottecon",
 			"title": "롯데건설 사이트 리뉴얼",
+			"type":"Javascript",
 			"skills": [
 				{
 					"skill": "HTML",
@@ -100,7 +117,12 @@
 				}
 			],
 			"url": "<a href='http://www.lottecon.co.kr/' target='_blank'>http://www.lottecon.co.kr/</a>",
-			"imgURL": "img/pf/pf004-01.jpeg",
+			"img": [
+				{"imgURL":"img/pf/pf004-01.jpeg","index":0,"first":"active"},
+				{"imgURL":"img/pf/pf004-02.jpeg","index":1},
+				{"imgURL":"img/pf/pf004-03.jpeg","index":2},
+				{"imgURL":"img/pf/pf004-04.jpeg","index":3}
+			],
 			"contents": [
 				{
 					"cTitle": "반응형 메인 페이지 제작",
@@ -113,9 +135,10 @@
 			]
 		},
 
-
 		{
+			"id":"camino",
 			"title": "Camino Corea",
+			"type":"Wordpress",
 			"skills": [
 				{
 					"skill": "Wordpress",
@@ -124,7 +147,10 @@
 				}
 			],
 			"url": "<a href='http://caminocorea.org/' target='_blank'>http://caminocorea.org/</a>",
-			"imgURL": "img/pf/pf005-01.png",
+			"img": [
+				{"imgURL":"img/pf/pf005-01.png","index":0,"first":"active"},
+				{"imgURL":"img/pf/pf005-02.png","index":1}
+			],
 			"contents": [
 				{
 					"cTitle": "Wordpress Website",
