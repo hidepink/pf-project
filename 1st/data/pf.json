@@ -157,6 +157,170 @@
 					"cDetail": "대한민국 산티아고 순례자 협회의 웹사이트를 워드프레스로 제작했습니다. 디자이너 1명과 함께 만드는 작은 규모의 사이트이였기 때문에 워드프레스를 이용해 구현했습니다. 이번에도 <a href='http://theme-fusion.com/avada/' target='_blank'>AVADA</a>테마를 구입해서 사용했는데요. 예전에 사용할때와는 다르게 최대한 테마의 구조와 기능을 이용해서 작업시간을 많이 단축했습니다. 다만 순례길과 숙소등의 페이지수가 워낙 많아 반복작업은 줄일수가 없었고 메뉴 하이라키 구조가 바뀌면 페이지에 둬야할지 포트폴리오나 블로그에 만들어야 할지 고민되는 문제가 있었습니다. 결국은 각각 성격에 최대한 맞게 사용했고 일반 테이블 방식의 게시판은 <a href='http://www.cosmosfarm.com/products/kboard' target='_blank'>K-Board</a>플러그인을 사용해 만들었습니다."
 				}
 			]
+		},
+
+		{
+			"id":"kgcyebon",
+			"title": "KGC 예본 웹사이트 리뉴얼",
+			"type":"Javascript",
+			"skills": [
+				{
+					"skill": "HTML",
+					"per": "25%",
+					"color":"progress-bar-info"
+				},
+				{
+					"skill": "CSS",
+					"per": "25%",
+					"color":"progress-bar-warning"
+				},
+				{
+					"skill": "Javascript",
+					"per": "50%",
+					"color":"progress-bar-success"
+				}
+			],
+			"url": "<a href='http://www.kgcyb.co.kr/' target='_blank'>http://www.kgcyb.co.kr/</a>",
+			"img": [
+				{"imgURL":"img/pf/pf006-01.jpg","index":0,"first":"active"},
+				{"imgURL":"img/pf/pf006-02.jpg","index":1},
+				{"imgURL":"img/pf/pf006-03.jpg","index":2}
+			],
+			"contents": [
+				{
+					"cTitle": "Animation Banner",
+					"cDetail": "KT&G그룹 계열사인 KGC예본의 웹사이트 작업에 참여했습니다. 플래시로 많이 만들었던 텍스트 모션을 자바스크립트와 제이쿼리를 활용해서 구현했습니다. 슬라이드 간의 이동은 넓은 배경을 상하로 움직이도록 하고 자신의 위치에 도착하면 텍스트와 이미지 애니메이션이 시작되도록 작업했습니다. 플래시 대신 자바스크립트로 대체되기 시작할 무렵이라 모션은 예전 플래시 배너와 닮아있지만 최적화는 덜 되어 로딩이나 애니메이션의 부자연스러움을 없애려고 많이 노력했던 프로젝트입니다."
+				}
+			]
+		},
+
+		{
+			"id":"guiness",
+			"title": "GUINESS I AM MORE 켐페인 마이크로 사이트",
+			"type":"Flash",
+			"skills": [
+				{
+					"skill": "Flash",
+					"per": "100%",
+					"color":"progress-bar-default"
+				}
+			],
+			"url": "서비스 종료",
+			"img": [
+				{"imgURL":"img/pf/pf007-01.jpg","index":0,"first":"active"},
+				{"imgURL":"img/pf/pf007-02.jpg","index":1},
+				{"imgURL":"img/pf/pf007-03.jpg","index":2}
+			],
+			"contents": [
+				{
+					"cTitle": "Full Flash Micro Site",
+					"cDetail": "'선택이 영화로, 영화가 현실이 되는 기네스 Realized Interactive Movie'를 모토로 한 디아지오사의 기네스 맥주 I AM MORE 켐페인의 마이크로 사이트를 제작했습니다. 켐페인은 정우성을 모델로 한 이벤트였으며 사용자의 선택에 따라 내용이 바뀌는 인터랙티브 무비 컨셉입니다. 그리고 실제 오프라인 기네스 매장에서 정우성이 인터랙티브 무비에서 했던 3가지 이벤트를 재연하는 행사도 함께 벌여 좋은 반응이 있었습니다. 전체 풀 플래시로 제작되었고 AS3.0을 이용했으고 영상이 흘러가는 도중 힌트를 제공하고 사용자의 상황에 따라 영상의 힌트가 더욱 자세히 노출되고 마지막에 이벤트에 참여하는 사이트였기 때문에 비디오 제어에 중점을 두어 제작했습니다. 디자이너와 협업을 통해 애니메이션이나 이벤트 레이어의 디자인을 조금씩 변경해 퀄리티를 높이기 위해 노력했습니다."
+				}
+			]
+		},
+
+		{
+			"id":"ktngsangsang",
+			"title": "KT&G 상상실현 웹사이트 구축",
+			"type":"Flash",
+			"skills": [
+				{
+					"skill": "Flash",
+					"per": "100%",
+					"color":"progress-bar-default"
+				}
+			],
+			"url": "서비스 종료(리뉴얼)",
+			"img": [
+				{"imgURL":"img/pf/pf008-01.png","index":0,"first":"active"},
+				{"imgURL":"img/pf/pf008-02.jpg","index":1}
+			],
+			"contents": [
+				{
+					"cTitle": "Flash Video Player",
+					"cDetail": "KT&G 상상실현 페스티벌 중 밴드인큐베이팅 페이지에 삽입된 플래시 비디오 플레이어를 제작했습니다. 서바이벌 방식의 콘텐츠였기 때문에 운영이 중요한 이슈였고 서버 데이터를 연동하여 비디오의 리스트와 비디오 플레이어를 노출해 주었습니다. 강력한 플래시 비디오의 스트리밍을 사용해서 퀄리티 높은 작업물이 나왔습니다."
+				}
+			]
+		},
+
+		{
+			"id":"chartis",
+			"title": "차티스손해보험 '큰 병 이기는 퀴즈' 이벤트 마이크로 사이트 제작",
+			"type":"Flash",
+			"skills": [
+				{
+					"skill": "Flash",
+					"per": "100%",
+					"color":"progress-bar-default"
+				}
+			],
+			"url": "서비스 종료",
+			"img": [
+				{"imgURL":"img/pf/pf009-01.png","index":0,"first":"active"},
+				{"imgURL":"img/pf/pf009-02.png","index":1},
+				{"imgURL":"img/pf/pf009-03.png","index":2}
+			],
+			"contents": [
+				{
+					"cTitle": "Full Flash Micro Site",
+					"cDetail": "차티스 손해보험의 '큰 병이기는 퀴즈' 마이크로 사이트를 제작했습니다. 설문조사 형식의 콘텐츠를 사용자가 순차적으로 진행하고 사용자 정보를 입력받는 형식의 마이크로 사이트였습니다. 개그우먼 박미선씨를 모델로한 재미요소가 있는 디자인이었기때문에 캐릭터들에 간단한 애니메이션을 주었고 화면 전환이나 요소 등장시에도 재미있는 느낌의 애니메이션을 주도록 했습니다."
+				}
+			]
+		},
+
+		{
+			"id":"renaultmain",
+			"title": "르노삼성자동차 시차스크롤 효과 메인 비주얼 제작",
+			"type":"Javascript",
+			"skills": [
+				{
+					"skill": "HTML",
+					"per": "15%",
+					"color":"progress-bar-info"
+				},
+				{
+					"skill": "CSS",
+					"per": "15%",
+					"color":"progress-bar-warning"
+				},
+				{
+					"skill": "Javascript",
+					"per": "70%",
+					"color":"progress-bar-success"
+				}
+			],
+			"demo": [
+				{
+					"demoName":"New SM7",
+					"demoURL":"demo/renault/nsm7/index.html"
+				},
+				{
+					"demoName":"SM3",
+					"demoURL":"demo/renault/sm3/index.html"
+				},
+				{
+					"demoName":"SM5",
+					"demoURL":"demo/renault/sm5/index.html"
+				},
+				{
+					"demoName":"QM5",
+					"demoURL":"demo/renault/qm5/index.html"
+				}
+			],
+			"url": "서비스 종료(리뉴얼)",
+			"img": [
+				{"imgURL":"img/pf/pf010-01.jpg","index":0,"first":"active"},
+				{"imgURL":"img/pf/pf010-02.jpg","index":1},
+				{"imgURL":"img/pf/pf010-03.jpg","index":2},
+				{"imgURL":"img/pf/pf010-04.jpg","index":3},
+				{"imgURL":"img/pf/pf010-05.jpg","index":4}
+			],
+			"contents": [
+				{
+					"cTitle": "Parallax Animation Visual Banner",
+					"cDetail": "르노삼성 자동차의 전체 사이트 리뉴얼 프로젝트에 참여했습니다. 자동차 회사답게 인터랙티브와 화려한 요소가 중시되는 사이트였는데요. 당시 잘 쓰이지 않던 Parallax(시차스크롤)을 사용하여 메인 비주얼을 제작했습니다. 자바스크립트의 <a href='http://stephband.info/jparallax/' target='_blank'>JParallax.js</a> 플러그인을 사용해서 구현하고 애니메이션은 jQuery를 사용했습니다. 시차 스크롤의 특성상 마우스의 위치에 따라 요소들의 위치잡는 작업에 많은 시간을 사용해 어느 곳에 위치해도 자연스럽게 나올수 있도록 작업했습니다. 그리고 레이어 이동할때 시차스크롤 요소들을 멈추고 자연스럽게 전환될수 있도록 만들었습니다. 그리고 IE8 대응을 위해 많은 연구를 하기도 했습니다. 투명한 배경을 가진 PNG 파일처리와 애니메이션 버그 등 여러가지 경험을 하게 한 프로젝트입니다."
+				}
+			]
 		}
 	]
 }

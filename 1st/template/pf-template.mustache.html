@@ -16,7 +16,6 @@
                 <img src='{{imgURL}}' class='pf-thumb'>
                 </div>
                 {{/img}}
-
             </div>
 
             <!-- Controls -->
@@ -34,6 +33,9 @@
     <div class='col-xs-12 col-md-6'>
         <h1>{{title}}</h1>
         <h4>{{{url}}}</h4>
+        {{#demo}}
+        <a href="{{demoURL}}" target="_blank">{{demoName}}</a>
+        {{/demo}}
         <hr>
 
         <div class="progress">
