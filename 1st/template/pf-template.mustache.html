@@ -7,7 +7,7 @@
 
         <div class="progress">
             {{#skills}}
-            <div class="progress-bar {{color}}" style="width: {{percent}}">{{skill}}</div>
+            <div class="progress-bar {{color}}" style='width:{{per}}'>{{skill}}</div>
             {{/skills}}
         </div>
         {{#contents}}
@@ -28,7 +28,7 @@
             <div class="carousel-inner" role="listbox">
                 {{#img}}
                 <div class="item {{first}}">
-                <img src={{imgURL}} class='pf-thumb'>
+                <img src='{{imgURL}}' class='pf-thumb'>
                 </div>
                 {{/img}}
 
@@ -47,4 +47,5 @@
 
     </div>
 </div>
+<hr>
 {{/projects}}

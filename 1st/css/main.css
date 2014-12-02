@@ -21,7 +21,8 @@ body {
 }
 
 .carousel {
-
+    width:80%;
+    left:10%;
     transform: matrix3d(1,0,0.00,0,0.00,0.71,0.71,-0.001,0,-0.71,0.71,0,0,0,0,1);
     -webkit-transform: matrix3d(1,0,0.00,0,0.00,0.71,0.71,-0.001,0,-0.71,0.71,0,0,0,0,1);
     -moz-transform: matrix3d(1,0,0.00,0,0.00,0.71,0.71,-0.001,0,-0.71,0.71,0,0,0,0,1);
@@ -31,6 +32,8 @@ body {
     transition: all 0.5s ease 0s;
 }
 .carousel:hover {
+    width:100%;
+    left:0;
     transform: matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,0,0,0,1);
     -webkit-transform: matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,0,0,0,1);
     -moz-transform: matrix3d(1,0,0.00,0,0.00,1,0.00,0,0,0,1,0,0,0,0,1);
@@ -50,7 +53,7 @@ body {
 }
 
 .pf-container {
-    margin-bottom:30px;
+    margin-bottom:50px;
 }
 
 h1 {
