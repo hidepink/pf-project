@@ -56,7 +56,9 @@
 			],
 			"url": "<a href='http://www.cdnetworks.co.kr' target='_blank'>http://www.cdnetworks.co.kr</a>",
 			"img": [
-				{"imgURL":"img/pf/pf002-01.jpeg","index":0,"first":"active"}
+				{"imgURL":"img/pf/pf003-01.jpeg","index":0,"first":"active"},
+				{"imgURL":"img/pf/pf003-02.jpeg","index":1},
+				{"imgURL":"img/pf/pf003-03.jpeg","index":2}
 			],
 			"contents": [
 				{
@@ -83,9 +85,7 @@
 			],
 			"url": "서비스 종료(리뉴얼됨)",
 			"img": [
-				{"imgURL":"img/pf/pf003-01.jpeg","index":0,"first":"active"},
-				{"imgURL":"img/pf/pf003-02.jpeg","index":1},
-				{"imgURL":"img/pf/pf003-03.jpeg","index":2}
+				{"imgURL":"img/pf/pf002-01.jpeg","index":0,"first":"active"}
 			],
 			"contents": [
 				{
