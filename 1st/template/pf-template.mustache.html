@@ -1,6 +1,6 @@
 {{#projects}}
 <div class='row pf-container'>
-    <div class='col-xs-12 col-md-8 col-md-offset-2'>
+    <div class='col-xs-12 col-md-12'>
         <div id="carousel-{{id}}" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -30,8 +30,8 @@
         </div>
 
     </div>
-    <div class='col-xs-12 col-md-8  col-md-offset-2'>
-        <h1>{{title}}</h1>
+    <div class='col-xs-12 col-md-12'>
+        <h3>{{title}}</h3>
         <h4>{{{url}}}</h4>
         {{#demo}}
         <a href="{{demoURL}}" target="_blank" style="margin-right:10px;">{{{demoName}}}</a>
@@ -49,5 +49,4 @@
         {{/contents}}
     </div>
 </div>
-<hr>
 {{/projects}}

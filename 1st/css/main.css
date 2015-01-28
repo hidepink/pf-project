@@ -1,5 +1,5 @@
 body {
-    /*background:#adcacc;*/
+    background:#eeeeee;
 }
 
 .pf-thumb {
@@ -54,7 +54,7 @@ body {
 }
 
 .pf-container {
-    margin-bottom:50px;
+    margin-bottom:100px;
 }
 
 h1 {
@@ -78,4 +78,61 @@ h1 {
     float:right;
     margin-left:15px;
     margin-bottom:15px;
+}
+
+.menu-fixed {
+	top:0;
+	position:fixed;
+}
+
+.menu-bottom-fixed {
+	bottom:0;
+	position:fixed;
+}
+
+.menu-sticky{
+	width:100%;
+	z-index:2;
+	overflow:hidden;
+}
+
+.white-paper {
+	background:#ffffff;
+	box-shadow : 0px 1px 3px #999999;
+	padding:0;
+}
+
+.container {
+	/*padding:0!important;*/
+}
+
+.menu-fixed .header-menu {
+	
+}
+
+
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+	padding: 0;
+}
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+	padding: 0;
+}
+
+
+.hello-box .container{
+	position:relative;
+	background:#ffffff;
+	height:100%;
+}
+
+.hello-comment {
+	position:relative;
+	width:100%;
+	height:80%;
+	padding:24px;
+}
+
+.pf-list {
+	margin:4%;
 }

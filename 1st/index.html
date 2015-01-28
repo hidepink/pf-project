@@ -1,96 +1,155 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+	<head lang="en">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
 
-    <!-- CSS Links for Bootstrap APOLLO -->
-    <link rel="stylesheet" href="skin//apollo/bootstrap.css" media="screen">
-    <link rel="stylesheet" href="skin//apollo/bootstrap-apollo.css" media="screen">
+		<!-- CSS Links for Bootstrap APOLLO -->
+		<link rel="stylesheet" href="skin//apollo/bootstrap.css" media="screen">
+		<link rel="stylesheet" href="skin//apollo/bootstrap-apollo.css" media="screen">
 
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- CSS Link -->
-    <link rel="stylesheet" href="css/main.css">
+		<!-- CSS Link -->
+		<link rel="stylesheet" href="css/main.css">
 
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js">IE7_PNG_SUFFIX=".png";</script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
-    <![endif]-->
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js">IE7_PNG_SUFFIX=".png";</script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+		<![endif]-->
 
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="js/mustache.js/mustache.js"></script>
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="js/mustache.js/mustache.js"></script>
 
-    <script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 
-    <script>
-        $(document).ready(function(){
-            $.getJSON( "data/pf.json", function( data ) {
-                var myData = data;
+		<script>
+			$(document).ready(function() {
+				$.getJSON("data/pf.json", function(data) {
+					var myData = data;
 
-                $.get('template/pf-template.mustache.html', function(template, textStatus, jqXhr) {
-                    var html = Mustache.to_html(template, myData);
-                    $('.pf-list').html(html);
+					$.get('template/pf-template.mustache.html', function(template, textStatus, jqXhr) {
+						var html = Mustache.to_html(template, myData);
+						$('.pf-list').html(html);
+					});
 
-                });
-            })
-            .done(function() {
-                console.log( "second success" );
-            })
-            .fail(function() {
-                console.log( "error" );
-            })
-            .always(function() {
-                console.log( "complete" );
-            });
-        })
-    </script>
-    <title>김세환 / Web Front-end & Interactove Developer</title>
-</head>
-<body>
-<div class="container navbar navbar-inverse">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Sehwan Kim</a>
-    </div>
-    <div class="navbar-collapse navbar-inverse-collapse collapse in" style="height: auto;">
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Active</a></li>
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Dropdown header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                </ul>
-            </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Link</a></li>
+					$.get('template/pf-menu-template.mustache.html', function(template, textStatus, jqXhr) {
+						var html = Mustache.to_html(template, myData);
+						$('.pf-list-menu').html(html);
+					});
 
-        </ul>
-    </div>
-</div>
-<div class="pf-list container">
-<!-- 템플릿 -->
-</div>
+				}).done(function() {
+					console.log("second success");
+				}).fail(function() {
+					console.log("error");
+				}).always(function() {
+					console.log("complete");
+				});
 
-<script src="skin//apollo/bootstrap.js"></script>
-<script src="skin//apollo/plugins/alertify/alertify.js"></script>
-<script src="skin//apollo/plugins/iosOverlay/iosOverlay.js"></script>
-<script src="skin//apollo/plugins/iosOverlay/prettify.js"></script>
-<script src="skin//apollo/plugins/iosOverlay/spin.min.js"></script>
-</body>
+				$(".pf-list-menu a , .logo").live("click", function() {
+					if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+						var target = $(this.hash);
+						target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+						if (target.length) {
+							$('html,body').animate({
+								scrollTop : target.offset().top - $(".menu-project").height()
+							}, 1000);
+							return false;
+						}
+					}
+				});
+
+				$(window).on('scroll', function() {
+					if ($(window).scrollTop() > $(".head-container").height()) {
+						$('.menu-sticky').addClass('menu-fixed');
+						$('.gotoTop').addClass('menu-bottom-fixed');
+					} else {
+						$('.menu-sticky').removeClass('menu-fixed');
+						$('.gotoTop').removeClass('menu-bottom-fixed');
+					}
+				});
+
+			})
+		</script>
+		<title>Sehwan Kim / UI & Interactive Developer</title>
+	</head>
+	<body>
+		<div class="head-container" id="head-container">
+			<div class="menu-sticky white-paper">
+				<div class="container">
+					<div class="rows">
+						<div class="col-xs-12 col-md-6">
+							<a href="#head-container" class="logo" style="text-decoration: none;"><h3>Sehwan Kim <small>Web UI&Interactive Developer</small></h3></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="hello-box">
+			<div class="container">
+				<div class="rows">
+					<div class="col-xs-4 col-md-3">
+						<img src="img/profile.jpg" alt="Profile" title="Profile" width="100%">
+					</div>
+					<div class="col-xs-12 col-md-9">
+						<div class="hello-comment">
+							<h3>안녕하세요! 웹 UI & Interactive 전문 개발자 김세환입니다</h3>
+							<p>
+								웹사이트 UI 개발, 인터랙티브 콘텐츠 개발, 워드프레스/그누보드 등의 CMS를 기반으로 한 웹사이트 제작합니다.
+								그 외 플래시,E-Book 콘텐츠 작업도 가능합니다. 작업의뢰나 문의사항은 이메일로 연락주시면 원하시는 방법으로 회신드리겠습니다.
+								<br>
+								현재 <a href="http://ionicframework.com/" target="_blank">IONIC</a> 하이브리드 앱 개발을 준비중입니다.
+							</p>
+							<h4>E-Mail</h4>
+							hidepink@naver.com
+							<h4>Skills</h4>
+							<p>
+								<span class="label label-primary">HTML4</span>
+								<span class="label label-primary">HTML5</span>
+								<span class="label label-primary">CSS2</span>
+								<span class="label label-primary">CSS3</span>
+								<span class="label label-success">JavaScript</span>
+								<span class="label label-success">jQuery</span>
+								<span class="label label-success">AJAX</span>
+								<span class="label label-danger">Flash</span>
+								<span class="label label-danger">ActionScript2</span>
+								<span class="label label-danger">ActionScript3</span>
+								<span class="label label-info">Wordpress</span>
+								<span class="label label-info">BootStrap</span>
+
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<br>
+		<div class="container">
+			<div class="rows">
+				<div class="col-xs-12 col-md-3">
+					<div class="projects-menu-sticky">
+					<h4>PROJECTS</h4>
+					<div class="pf-list-menu">
+						<!-- 템플릿 -->
+					</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-9">
+					<div class="pf-list">
+						<!-- 템플릿 -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="skin//apollo/bootstrap.js"></script>
+		<script src="skin//apollo/plugins/alertify/alertify.js"></script>
+		<script src="skin//apollo/plugins/iosOverlay/iosOverlay.js"></script>
+		<script src="skin//apollo/plugins/iosOverlay/prettify.js"></script>
+		<script src="skin//apollo/plugins/iosOverlay/spin.min.js"></script>
+	</body>
 </html>
